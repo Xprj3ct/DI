@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'VT323', monospace;
+  background: radial-gradient(circle, #005f06, #000000);
+  color: #ffffff;
+}
+
+h1, h2, h3 {
+  font-family: 'Press Start 2P', cursive;
+}
+
+button {
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Floating Logo Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-20px) translateX(20px);
+  }
+}
+@keyframes float-around {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(80vw, 20vh);
+  }
+  50% {
+    transform: translate(50vw, 70vh);
+  }
+  75% {
+    transform: translate(20vw, 50vh);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.floating-logo {
+  position: absolute;
+  animation: float-around 10s linear infinite; /* Adjust speed with '10s' */
+}
+
+/* .floating-logo {
+  position: absolute;
+  animation: float 5s ease-in-out infinite;
+  left: 10%;
+  top: 10%;
+} */
+
+/* Flying Message Animation */
+@keyframes fly {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+.animate-fly {
+  animation: fly 3s linear forwards;
+}
+nav {
+  transition: height 0.3s ease-in-out;
+}
+
