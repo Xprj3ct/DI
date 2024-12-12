@@ -3,6 +3,8 @@ import Footer from "../components/Footer";
 import TokenInfo from "../components/TokenInfo";
 import ValhallaTracker from "../components/ValhallaTracker";
 import { MemeGallery } from "@/components/MemeGallery";
+import Image from "next/image";
+
 
 export default function Home() {
   const [mentions, setMentions] = useState(0);
@@ -49,7 +51,7 @@ export default function Home() {
         {/* Floating Logo */}
         <div className="absolute inset-0  w-full h-full pointer-events-auto">
           <div className="floating-logo w-16 h-16 md:w-40 md:h-40">
-            <img
+            <Image
               src="2.jpg"
               alt="$DI Logo"
               className="w-full h-full rounded-full object-contain"

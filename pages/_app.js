@@ -2,6 +2,8 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import "../styles/globals.css";
 import { DegenLounge } from "@/components/DegenLounge";
+import Head from 'next/head';
+
 
 function MyApp({ Component, pageProps }) {
   const [showDegenLounge, setShowDegenLounge] = useState(false);
@@ -12,10 +14,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <head>
+      <Head>
         <link rel="icon" href="/favico.ico" />
         <Navbar toggleDegenLounge={toggleDegenLounge} />
-      </head>
+      </Head>
       <Component {...pageProps} />
       {/* Degen Lounge Popup */}
       {showDegenLounge && <DegenLounge toggleShow={toggleDegenLounge} />}
