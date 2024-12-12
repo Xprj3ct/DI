@@ -10,10 +10,9 @@ const TokenInfo = () => {
           </span>
         </p>
         <p>
-          Mechanism:{" "}
+          CA:{" "}
           <span className="font-bold text-di-blue">
-            At least one token goes to Valhalla for every crazy move you make.
-            🔥
+            degenintelligence
           </span>
         </p>
         <p>
