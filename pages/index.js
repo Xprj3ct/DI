@@ -52,8 +52,10 @@ export default function Home() {
         <div className="absolute inset-0  w-full h-full pointer-events-auto">
           <div className="floating-logo w-16 h-16 md:w-40 md:h-40">
             <Image
-              src="2.jpg"
+              src="/2.jpg"
               alt="$DI Logo"
+              width={200} // Required for the ratio, can be adjusted
+              height={200} // Required for the ratio, can be adjusted
               className="w-full h-full rounded-full object-contain"
             />
           </div>
