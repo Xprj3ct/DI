@@ -14,10 +14,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Head>
+      
         <link rel="icon" href="/favico.ico" />
         <Navbar toggleDegenLounge={toggleDegenLounge} />
-      </Head>
+      
       <Component {...pageProps} />
       {/* Degen Lounge Popup */}
       {showDegenLounge && <DegenLounge toggleShow={toggleDegenLounge} />}
