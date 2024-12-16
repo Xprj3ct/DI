@@ -12,7 +12,7 @@ const TokenInfo = () => {
         <p>
           CA:{" "}
           <span className="font-bold text-di-blue">
-            degenintelligence
+            soon
           </span>
         </p>
         <p>
