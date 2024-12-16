@@ -7,22 +7,22 @@ const Footer = () => {
         {/* Social Links with Logos */}
         <div className="flex justify-center space-x-10 items-center">
           <a
-            href="https://twitter.com/your_handle"
+            href="https://twitter.com/degenintelx"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center text-di-pink hover:text-di-blue text-lg font-bold space-x-2"
           >
             <FaTwitter size={24} />
-            <span>Follow us on X</span>
+            <span>X</span>
           </a>
           <a
-            href="https://t.me/your_telegram_channel"
+            href="https://t.me/degenintelx"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center text-di-pink hover:text-di-blue text-lg font-bold space-x-2"
           >
             <FaTelegramPlane size={24} />
-            <span>Join the Telegram Degens</span>
+            <span>Telegram Degens</span>
           </a>
         </div>
 

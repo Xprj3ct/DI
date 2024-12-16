@@ -70,7 +70,7 @@ export default function Home() {
           </p>
           <p className="text-m p-10 mt-4">{typewriterText}</p>
           <a
-            href="https://meme.cooking/"
+            href="https://meme.cooking/meme/1385"
             className="mt-8 bg-di-pink px-8 py-3 rounded-md text-lg font-bold hover:bg-di-blue"
           >
             Buy $DI
